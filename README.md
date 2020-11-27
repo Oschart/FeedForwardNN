@@ -1,5 +1,5 @@
 
-**[Part I]{.underline}**
+## **Part I**
 
 **Image Classification Using**
 
