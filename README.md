@@ -1,32 +1,9 @@
-+---------------------------------+-------------------------+
-|                                 |                         |
-+---------------------------------+-------------------------+
-| Practical Deep Machine Learning |                         |
-| =============================== |                         |
-|                                 |                         |
-| Assignment 2 Report             |                         |
-| ===================             |                         |
-+---------------------------------+-------------------------+
-|                                 |                         |
-+---------------------------------+-------------------------+
-|                                 | Dr. Mohamed Mostafa     |
-|                                 | -------------------     |
-|                                 |                         |
-|                                 | Fall 2020               |
-|                                 | ---------               |
-+---------------------------------+-------------------------+
-|                                 | Mohamed A. Abdel Hamed  |
-|                                 | ----------------------  |
-|                                 |                         |
-|                                 | 900163202               |
-|                                 | ---------               |
-+---------------------------------+-------------------------+
 
 **[Part I]{.underline}**
 
 **Image Classification Using**
 
-**Artificial Neural Networks**
+**Feed-Forward Neural Networks**
 
 **1. Code:**
 
@@ -130,7 +107,7 @@ III. **Weight update:** after assembling the weight gradients of a
 > The following graph shows validation results for 3 different layer
 > architectures.
 >
-> ![](media/image1.png){width="7.291666666666667in" height="4.6875in"}
+![Alt text](plots/ARCH.png?raw=true "NARCH")
 >
 > Validation results don't show conclusive differences except for
 > stability; thus, \[64, 32\] was selected for moderation.
@@ -143,7 +120,7 @@ III. **Weight update:** after assembling the weight gradients of a
 > finer-grained step. The following graph shows results for tuning the
 > learning rate.
 >
-> ![](media/image2.png){width="7.291666666666667in" height="4.6875in"}
+![Alt text](plots/LR.png?raw=true "NARCH")
 >
 > Based on that, the value for learning rate was chosen to be 0.05
 > because it has an overall better performance in further epochs and is
@@ -153,7 +130,7 @@ III. **Weight update:** after assembling the weight gradients of a
 >
 > The following graph shows results for tuning the activation function.
 >
-> ![](media/image3.png){width="7.291666666666667in" height="4.6875in"}
+![Alt text](plots/ACT.png?raw=true "NARCH")
 >
 > We can see that both ReLU and Sigmoid have very close accuracies for
 > large epoch counts with Sigmoid having a slight edge. Given that, ReLU
@@ -164,7 +141,7 @@ III. **Weight update:** after assembling the weight gradients of a
 >
 > The following graph shows results for tuning the loss function.
 >
-> ![](media/image4.png){width="7.291666666666667in" height="4.6875in"}
+![Alt text](plots/LOSS.png?raw=true "NARCH")
 >
 > It can be seen that NLL is superior in accuracies, so it was picked
 > for the final model. Moreover, it is more commonly used in Neural
@@ -174,7 +151,7 @@ III. **Weight update:** after assembling the weight gradients of a
 >
 > The following graph shows results for tuning the optimizer.
 >
-> ![](media/image5.png){width="7.291666666666667in" height="4.6875in"}
+![Alt text](plots/OPT.png?raw=true "NARCH")
 >
 > We can see that Adam was more stable, hence more preferable for the
 > reliability of results although they have a close average accuracy.
@@ -183,7 +160,7 @@ III. **Weight update:** after assembling the weight gradients of a
 >
 > The following graph shows results for tuning the beta1 parameter.
 >
-> ![](media/image6.png){width="7.291666666666667in" height="4.6875in"}
+![Alt text](plots/BETA1.png?raw=true "NARCH")
 >
 > Results don't show a clear edge for any of the values tried (except
 > for a slight edge to 0.95), so the most empirically trusted value of
@@ -193,7 +170,7 @@ III. **Weight update:** after assembling the weight gradients of a
 >
 > The following graph shows results for tuning the beta2 parameter.
 >
-> ![](media/image7.png){width="7.291666666666667in" height="4.6875in"}
+![Alt text](plots//BETA2.png?raw=true "NARCH")
 >
 > Results don't show a clear edge for any of the values tried (except
 > for a slight edge to 0.9), so the most empirically trusted value of
@@ -212,7 +189,7 @@ III. **Weight update:** after assembling the weight gradients of a
 > The following screenshot indicates the chosen parameters for the final
 > model:
 >
-> ![](media/image8.png){width="4.791666666666667in" height="2.375in"}
+![Alt text](plots//FINAL_MODEL.png?raw=true "NARCH")
 >
 > Below are the loss results of the final model:
 >
